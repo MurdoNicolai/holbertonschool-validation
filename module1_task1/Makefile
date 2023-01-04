@@ -3,4 +3,4 @@ build:
 clean:
 	rm -fr ./dist/
 post:
-	hugo new ${POST_NAME}/${POST_TITLE}
+	hugo new ${POST_NAME}/${POST_TITLE}.md
