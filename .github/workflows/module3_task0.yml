@@ -1,0 +1,20 @@
+---
+name: module3_task0
+on:   # yamllint disable-line rule:truthy
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  module3_task0:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the repository
+        uses: actions/checkout@v3
+      - name: create new workflow
+        run: |
+          git clone https://github.com/MurdoNicolai/holbertonschool-validation.git
+          cd module3_task0
+          make help
