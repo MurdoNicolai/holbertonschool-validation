@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@v3
       - name: create new workflow
         run: |
-          git clone
-            https://github.com/MurdoNicolai/holbertonschool-validation.git
+          git clone https://github.com/MurdoNicolai/holbertonschool-validation.git
           cd module3_task0
           make help
