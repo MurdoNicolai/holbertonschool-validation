@@ -22,4 +22,4 @@ lint: ## setup check
 	mdl DEPLOY.md
 
 unit-tests: ## test not working
-	ls
+	echo "make integration-tests"
