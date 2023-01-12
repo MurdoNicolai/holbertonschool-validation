@@ -18,6 +18,6 @@ package: ## This command line download a zip archive to zip.
 	zip awesome-website.zip dist/
 
 lint: ## setup check
-	markdownlint README.md
-	markdownlint DEPLOY.md
+	mdl README.md
+	mdl DEPLOY.md
 

@@ -1,4 +1,4 @@
-# What is in the archive and how to unarchive it?
+# What is in the archive and how to unarchive it
 
 What are the commands to start and stop the application?
 
