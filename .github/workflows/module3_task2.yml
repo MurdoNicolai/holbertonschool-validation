@@ -1,0 +1,28 @@
+---
+name: module3_task1
+on:   # yamllint disable-line rule:truthy
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  module3_task1:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout the repository
+        uses: actions/checkout@v3
+
+      - name: create new workflow
+        run: >
+          git clone
+          "https://github.com/MurdoNicolai/holbertonschool-validation.git"
+
+      - name: setup and Build
+        run: |
+          cd module3_task1
+          chmod +x setup.sh
+          sudo -E ./setup.sh
+          make build
