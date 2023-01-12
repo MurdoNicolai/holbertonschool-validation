@@ -27,3 +27,4 @@ jobs:
           sudo -E ./setup.sh
           make package
           make lint
+          make unit-tests
