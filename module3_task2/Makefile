@@ -1,15 +1,15 @@
-build: #comment
+build: ## comment
 	hugo
 
-clean:
+clean: ## cleans up package an build
 	rm -r dist/*
 	rm -r awesome-website.zip
 
-post: #comment
+post: ## comment
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
-help: #comment
+help: ## comment
 	cat Makefile | grep "##" | tr -d '##'
 
 

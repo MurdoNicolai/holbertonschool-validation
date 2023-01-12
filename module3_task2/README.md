@@ -12,7 +12,6 @@
   * `Go Hugo` v0.80+
 * A text editor or IDE (Integrated Development Editor) of your convenience (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 
-
 ## Lifecycle
 
 * `build` : Generate the website from the markdown and configuration files in the directory `dist/`.
@@ -20,6 +19,7 @@
 * `help` : prints out the list of targets and their usage.
 * `package` : make a zipfile with dis and the api
 * `lint` : checks readme and deploy
+* `clean` : cleans up package or build
 
 ## Workflow
 
