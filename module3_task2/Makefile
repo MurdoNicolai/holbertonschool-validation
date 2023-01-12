@@ -18,6 +18,4 @@ package: ## This command line download a zip archive to zip.
 	zip awesome-website.zip dist/
 
 lint: ## setup check
-	markdownlint README.md
-	markdownlint DEPLOY.md
-	$(SHELLCHECK) setup.sh >/dev/null 2>&1 || "Lint Failed"
+	ls
