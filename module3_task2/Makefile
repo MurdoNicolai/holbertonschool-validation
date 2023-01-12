@@ -1,18 +1,18 @@
-build:
+build: #comment
 	hugo
 
-clean:
+clean: #comment
 	rm -r dist/*
 
-post:
+post: #comment
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
-help:
+help: #comment
 	cat Makefile | grep "##" | tr -d '##'
 
-package:
+package: #comment
 	zip -r awesome-website.zip dist awesome-api
 
-lint:
+lint: #comment
 	markdownlint README.md DEPLOY.md
