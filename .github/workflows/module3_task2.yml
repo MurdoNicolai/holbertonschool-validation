@@ -26,3 +26,4 @@ jobs:
           chmod +x setup.sh
           sudo -E ./setup.sh
           make package
+          make lint
