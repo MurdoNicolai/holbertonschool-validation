@@ -1,7 +1,7 @@
 build: #comment
 	hugo
 
-clean: #Cleanup the content of the directory `dist/`
+clean:
 	rm -r dist/*
 
 post: #comment
