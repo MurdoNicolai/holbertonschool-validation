@@ -10,7 +10,6 @@
   * GNU Make in version 3.81+
   * Git (command line) in version 2+
   * `Go Hugo` v0.80+
-* The student needs to be able to spawn up a clean Ubuntu 18.04 system. Therefore Docker is recommended with NO prior knowledge.
 * A text editor or IDE (Integrated Development Editor) of your convenience (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 
 

@@ -3,6 +3,7 @@ build: #comment
 
 clean:
 	rm -r dist/*
+	rm -r awesome-website.zip
 
 post: #comment
 	hugo new posts/$(POST_NAME).md
@@ -11,8 +12,15 @@ post: #comment
 help: #comment
 	cat Makefile | grep "##" | tr -d '##'
 
-package: #comment
-	zip -r awesome-website.zip ./dist ./awesome-api
+
+package: ## This command line download a zip archive to zip.
+	make build
+	zip awesome-website.zip dist/
+
+lint: ## setup check
+	markdownlint README.md
+	markdownlint DEPLOY.md
+	$(SHELLCHECK) setup.sh >/dev/null 2>&1 || "Lint Failed"
 
 lint: #comment
 	markdownlint README.md DEPLOY.md
