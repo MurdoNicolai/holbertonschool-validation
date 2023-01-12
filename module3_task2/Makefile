@@ -16,6 +16,7 @@ help: ## comment
 package: ## This command line download a zip archive to zip.
 	make build
 	zip awesome-website.zip dist/
+	
 
 lint: ## setup check
-	ls
+	echo "make unit-tests"

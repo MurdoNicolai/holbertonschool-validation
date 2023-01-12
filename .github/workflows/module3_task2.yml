@@ -9,7 +9,7 @@ on:   # yamllint disable-line rule:truthy
       - main
 
 jobs:
-  module3_task1:
+  module3_task:
     runs-on: ubuntu-18.04
     steps:
       - name: checkout the repository
