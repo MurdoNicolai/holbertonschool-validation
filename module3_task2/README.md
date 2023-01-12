@@ -1,4 +1,4 @@
-## Prerequisites
+# Prerequisites
 
 * Shell terminal basics
 
@@ -7,9 +7,9 @@
 * A HTML5-compliant web browser
 * A free account on GitHub, referenced as `<GitHub Handle>`
 * A shell terminal with `bash` `zsh` or `ksh`, including the standard Unix toolset (`ls`, `cd`, etc.) with:
-    - GNU Make in version 3.81+
-    - Git (command line) in version 2+
-    - `Go Hugo` v0.80+
+  * GNU Make in version 3.81+
+  * Git (command line) in version 2+
+  * `Go Hugo` v0.80+
 * The student needs to be able to spawn up a clean Ubuntu 18.04 system. Therefore Docker is recommended with NO prior knowledge.
 * A text editor or IDE (Integrated Development Editor) of your convenience (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 
@@ -26,8 +26,8 @@
 This project needs the following tools / services:
 
 * The command lines
-    - yq
-    - shellcheck
+  * yq
+  * shellcheck
 
 ## Build Workflow
 
@@ -35,4 +35,4 @@ Regarding the tooling, you have to:
 
 * Ensure that the workflow is executed into an Ubuntu 18.04 execution environment
 * Ensure that all the required tools are installed prior to any make target, by executing the script setup.sh
-    - The script should be modified to only install missing tools (no make target are expected)
+  * The script should be modified to only install missing tools (no make target are expected)

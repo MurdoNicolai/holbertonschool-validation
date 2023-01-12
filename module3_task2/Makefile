@@ -1,7 +1,7 @@
 build: #comment
 	hugo
 
-clean: #comment
+clean: #Cleanup the content of the directory `dist/`
 	rm -r dist/*
 
 post: #comment
@@ -12,7 +12,7 @@ help: #comment
 	cat Makefile | grep "##" | tr -d '##'
 
 package: #comment
-	zip -r awesome-website.zip dist awesome-api
+	zip -r awesome-website.zip ./dist ./awesome-api
 
 lint: #comment
 	markdownlint README.md DEPLOY.md
