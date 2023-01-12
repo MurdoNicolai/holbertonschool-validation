@@ -1,7 +1,7 @@
 name: module3_task1
 on:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '0 0 * * *'
   push:
     branches:
       - main
@@ -12,22 +12,12 @@ jobs:
     steps:
       - name: checkout the repository
         uses: actions/checkout@v3
-      - name: Setup environment
-        run:
-          ./module3_task1/setup.sh
 
-      - name: Build
+      - name: setup and Build
         run: |
           cd module3_task1
+          ./setup.sh
           make build
-
-      - name: Create post
-        env:
-          POST_NAME: my-post
-          POST_TITLE: My Post
-        run: |
-          cd module3_task1
-          make post
 
       - name: clean up the dist
         run: |
