@@ -22,7 +22,7 @@ jobs:
 
       - name: setup and Build
         run: |
-          chmod +x setup.sh
           cd module3_task1
+          chmod +x setup.sh
           sudo -E ./setup.sh
           make build
