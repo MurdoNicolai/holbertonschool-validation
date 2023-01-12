@@ -16,7 +16,9 @@ help: ## comment
 package: ## This command line download a zip archive to zip.
 	make build
 	zip awesome-website.zip dist/
-	
 
 lint: ## setup check
-	echo "make unit-tests"
+	markdownlint README.md
+	markdownlint DEPLOY.md
+	$(SHELLCHECK) setup.sh >/dev/null 2>&1 || "Lint Failed"
+
