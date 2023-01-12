@@ -23,5 +23,5 @@ jobs:
       - name: setup and Build
         run: |
           cd module3_task1
-          ./setup.sh
+          sudo ./setup.sh
           make build
