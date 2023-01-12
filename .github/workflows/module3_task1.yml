@@ -17,14 +17,15 @@ jobs:
 
       - name: create new workflow
         run: |
-          git clone "https://github.com/
-          MurdoNicolai/holbertonschool-validation.git"
+          git clone "https://github.com/MurdoNicolai/holbertonschool-validation.git"
 
       - name: setup and Build
         run: |
           cd module3_task1
           ./setup.sh
           make build
+
+
 
 
 
