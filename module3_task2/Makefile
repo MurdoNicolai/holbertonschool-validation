@@ -21,6 +21,3 @@ lint: ## setup check
 	markdownlint README.md
 	markdownlint DEPLOY.md
 	$(SHELLCHECK) setup.sh >/dev/null 2>&1 || "Lint Failed"
-
-lint: #comment
-	markdownlint README.md DEPLOY.md
