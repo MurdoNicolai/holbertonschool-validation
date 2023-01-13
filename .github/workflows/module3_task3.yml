@@ -15,6 +15,10 @@ jobs:
       - name: checkout the repository
         uses: actions/checkout@v3
 
+    - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+
       - name: create new workflow
         run: >
           git clone
