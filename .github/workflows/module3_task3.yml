@@ -35,4 +35,5 @@ jobs:
         with:
           files: |
             awesome-website.zip
-            DEPLOY.md
+          body:
+            cat DEPLOY.md
