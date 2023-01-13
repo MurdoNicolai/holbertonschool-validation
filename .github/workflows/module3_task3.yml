@@ -1,5 +1,5 @@
 ---
-name: module3_task2
+name: module3_task3
 on:   # yamllint disable-line rule:truthy
   workflow_dispatch:
   schedule:
@@ -26,7 +26,7 @@ jobs:
 
       - name: setup and Build
         run: |
-          cd module3_task2
+          cd module3_task3
           chmod +x setup.sh
           sudo -E ./setup.sh
           make package
