@@ -18,7 +18,7 @@ jobs:
       - name: create new workflow
         run: >
           git clone
-            "https://github.com/MurdoNicolai/holbertonschool-validation.git"
+          "https://github.com/MurdoNicolai/holbertonschool-validation.git"
 
       - name: setup and Build
         run: |
