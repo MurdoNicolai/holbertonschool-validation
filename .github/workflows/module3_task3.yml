@@ -7,8 +7,6 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
-    tags:
-      - "1.0.0"
 
 jobs:
   module3_task3:
