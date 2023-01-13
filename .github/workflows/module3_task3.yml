@@ -29,10 +29,10 @@ jobs:
           make lint
           make unit-tests
 
-        - name: 1.0.0
-          uses: softprops/action-gh-1.0.0@v1
-          if: startsWith(github.ref, 'refs/tags/')
-          with:
-            files: |
-              awesome-website.zip
-              DEPLOY.md
+      - name: 1.0.0
+        uses: softprops/action-gh-1.0.0@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            awesome-website.zip
+            DEPLOY.md
