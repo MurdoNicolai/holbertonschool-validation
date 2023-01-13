@@ -6,4 +6,4 @@ How to customize where the application logs are written?
 
 How to “quickly” verify that the application is running (healthcheck)?
 
-zip tag
+Generate an archive when triggered by a tag
