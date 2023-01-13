@@ -5,6 +5,8 @@ on:  # yamllint disable-line rule:truthy
   schedule:
     - cron: '0 0 * * *'
   push:
+    tags:
+      - '1.0.0'
     branches:
       - main
 
@@ -28,6 +30,10 @@ jobs:
           make package
           make lint
           make unit-tests
+
+
+      - name: Build
+        run: echo ${{ github.sha }} > Release.txt
 
       - name: 1.0.0
         uses: softprops/action-gh-release@v0.1.15
