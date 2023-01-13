@@ -9,8 +9,7 @@ on:  # yamllint disable-line rule:truthy
       - '1.0.0'
     branches:
       - main
-  on:
-    pull_request:
+  pull_request:
 jobs:
   module3_task3:
     runs-on: ubuntu-18.04
