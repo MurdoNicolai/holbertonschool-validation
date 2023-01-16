@@ -11,7 +11,7 @@ on:  # yamllint disable-line rule:truthy
       - main
   pull_request:
 jobs:
-  module3_task3:
+  module3_task4:
     runs-on: ubuntu-18.04
     steps:
       - name: checkout the repository
