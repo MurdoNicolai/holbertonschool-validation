@@ -1,3 +1,6 @@
 */dist/
 */content/posts/*
 github.sh
+
+# Local Netlify folder
+.netlify
