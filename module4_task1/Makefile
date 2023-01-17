@@ -35,7 +35,10 @@ integration-tests: ## test not working
 
 build-docker: ## makes image: awsome:build
 	make build
-	docker build ./build -t awesome:build
+	docker build ./build -t awesome:build --no-cache
+
+build-tools:## Install the hugo
+	sudo apt install ./hugo.deb
 
 test: ## run tests
 	make unit-tests
