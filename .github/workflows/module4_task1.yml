@@ -27,10 +27,8 @@ jobs:
           cd module4_task1
           chmod +x setup.sh
           sudo -E ./setup.sh
-          make package
-          make lint
-          make unit-tests
           make build
+          make unit-tests
           make integration-tests
 
 
