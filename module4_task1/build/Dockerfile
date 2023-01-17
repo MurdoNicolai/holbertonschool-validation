@@ -1,6 +1,8 @@
-FROM golang:1.19
+FROM golang:1.15.8-buster
 
-RUN touch golang:1.15.8-buster
+RUN mkdir dist
+COPY .. .
+
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
@@ -15,7 +17,3 @@ RUN npm install -g markdownlint-cli
 RUN markdownlint README.md
 RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.84.0/hugo_0.84.0_Linux-64bit.deb -o hugoversion.deb
 RUN apt install ./hugoversion.deb
-RUN mkdir dist
-
-WORKDIR /usr/src/app
-COPY . .
