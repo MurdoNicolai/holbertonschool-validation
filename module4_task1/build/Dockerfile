@@ -1,6 +1,7 @@
 FROM golang:1.15.8-buster
 
 RUN mkdir dist
+RUN mkdir ../dist
 
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
