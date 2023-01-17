@@ -1,6 +1,5 @@
 build: ## comment
 	hugo
-	mkdir dist
 	touch awesome-api
 
 clean: ## cleans up package an build
@@ -34,11 +33,7 @@ integration-tests: ## test not working
 	touch coverage-integrations.out
 
 build-docker: ## makes image: awsome:build
-	make build
 	docker build ./build -t awesome:build --no-cache
-
-build-tools:## Install the hugo
-	sudo apt install ./hugo.deb
 
 test: ## run tests
 	make unit-tests

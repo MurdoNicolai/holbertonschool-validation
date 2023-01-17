@@ -3,6 +3,7 @@ FROM golang:1.15.8-buster
 COPY . .
 RUN apt install git
 RUN git clone https://github.com/murdonicolai/holbertonschool-validation.git
+RUN mv ./holbertonschool-validation/module4_task0/* .
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
@@ -15,4 +16,8 @@ RUN node --version
 RUN npm --version
 RUN npm install -g markdownlint-cli
 RUN markdownlint README.md
-RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.84.0/hugo_0.84.0_Linux-64bit.deb -o hugoversion.deb
+RUN apt-get update
+RUN apt-get install -y curl git
+RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.deb -o hugo.deb
+RUN apt install -y ./hugo.deb
+RUN make build
