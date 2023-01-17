@@ -5,6 +5,7 @@ build: ## comment
 clean: ## cleans up package an build
 	rm -r dist/*
 	rm -r awesome-website.zip
+	rm coverage-units.out coverage-integrations.out
 
 post: ## comment
 	hugo new posts/$(POST_NAME).md
@@ -33,3 +34,9 @@ integration-tests: ## test not working
 
 build-docker: ## makes image: awsome:build
 	docker build ./build -t awesome:build
+	hugo
+	docker cp
+
+test: ## run tests
+	make unit-tests
+	make integration-tests
