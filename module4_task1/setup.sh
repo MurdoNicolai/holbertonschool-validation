@@ -7,5 +7,5 @@
 # docker pull klakegg/hugo
 # sudo snap install golangci-lint
 # sudo gem install chef-utils -v 16.6.14
-sudo npm install -g markdownlint-cli
-sudo gem install mdl -v 0.11.0
+# sudo npm install -g markdownlint-cli
+# sudo gem install mdl -v 0.11.0
