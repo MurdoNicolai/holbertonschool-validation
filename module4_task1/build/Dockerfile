@@ -1,6 +1,5 @@
 FROM golang:1.19
 
-
 RUN touch golang:1.15.8-buster
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl

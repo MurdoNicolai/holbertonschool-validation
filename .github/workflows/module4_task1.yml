@@ -30,6 +30,8 @@ jobs:
           make package
           make lint
           make unit-tests
+          make build
+          make integration-tests
 
 
       - name: Build
