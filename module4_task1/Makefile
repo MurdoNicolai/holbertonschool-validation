@@ -33,9 +33,8 @@ integration-tests: ## test not working
 	touch coverage-integrations.out
 
 build-docker: ## makes image: awsome:build
+	make build
 	docker build ./build -t awesome:build
-	hugo
-	docker cp
 
 test: ## run tests
 	make unit-tests
