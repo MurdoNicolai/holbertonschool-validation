@@ -31,4 +31,4 @@ integration-tests: ## test not working
 	touch coverage-integrations.out
 
 build-docker: ## makes image: awsome:build
-	docker build -t awesome:build
+	docker build ./build -t awesome:build
