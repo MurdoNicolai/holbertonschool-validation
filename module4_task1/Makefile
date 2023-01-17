@@ -1,5 +1,6 @@
 build: ## comment
 	hugo
+	mkdir dist
 	touch awesome-api
 
 clean: ## cleans up package an build
