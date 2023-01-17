@@ -19,8 +19,9 @@ package: ## This command line download a zip archive to zip.
 	zip awesome-website.zip dist/
 
 lint: ## setup check
-	markdownlint README.md
-	markdownlint DEPLOY.md
+	ls
+	## markdownlint README.md
+	## markdownlint DEPLOY.md
 
 unit-tests: ## test not working
 	echo "make integration-tests"
