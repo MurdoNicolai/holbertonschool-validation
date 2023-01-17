@@ -2,7 +2,6 @@ FROM golang:1.15.8-buster
 
 RUN mkdir dist
 RUN mkdir ../dist
-COPY .. .
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
