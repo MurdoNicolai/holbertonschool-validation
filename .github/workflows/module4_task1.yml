@@ -30,6 +30,7 @@ jobs:
           make build
           make unit-tests
           make integration-tests
+          make build-docker
 
 
       - name: Build
