@@ -1,4 +1,4 @@
-FROM golang:1.15.8-buster
+FROM golang:1.20rc2-buster
 
 CMD mkdir dist
 RUN apt install git
