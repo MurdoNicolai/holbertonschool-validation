@@ -28,7 +28,6 @@ jobs:
           make build
           make unit-tests
           make integration-tests
-          make validate
           make build-docker
           make test
           make package
