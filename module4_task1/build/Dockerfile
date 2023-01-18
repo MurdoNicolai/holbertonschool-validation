@@ -1,6 +1,5 @@
 FROM golang:1.20rc2-bullseye
 RUN echo "golang:1.15.8-buster"
-CMD mkdir dist
 RUN apt install git
 RUN git clone https://github.com/MurdoNicolai/holbertonschool-validation.git
 WORKDIR /go/holbertonschool-validation/module4_task1
