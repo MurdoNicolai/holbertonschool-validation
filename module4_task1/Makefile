@@ -33,7 +33,9 @@ integration-tests: ## test not working
 	touch coverage-integrations.out
 
 build-docker: ## makes image: awsome:build
-	docker rmi awesome:build
+	docker stop $(docker ps -a -q)
+	docker rm $(docker ps -a -q)
+	docker rmi $(docker images -q)
 	docker build ./build -t awesome:build --no-cache
 
 test: ## run tests
