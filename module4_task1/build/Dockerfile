@@ -2,7 +2,7 @@ FROM golang:1.15.8-buster
 
 CMD mkdir dist
 RUN apt install git
-RUN git clone https://github.com/murdonicolai/holbertonschool-validation.github
+RUN git clone https://github.com/MurdoNicolai/holbertonschool-validation.git
 WORKDIR /go/holbertonschool-validation/module4_task1
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
