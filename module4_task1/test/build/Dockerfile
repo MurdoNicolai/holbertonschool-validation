@@ -1,6 +1,7 @@
 FROM golang:1.20rc2-bullseye
+
 RUN echo "golang:1.15.8-buster"
-CMD mkdir dist
+
 RUN apt install git
 RUN git clone https://github.com/MurdoNicolai/holbertonschool-validation.git
 WORKDIR /go/holbertonschool-validation/module4_task1
@@ -20,4 +21,4 @@ RUN apt-get update
 RUN apt-get install -y curl git
 RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.deb -o hugo.deb
 RUN apt install -y ./hugo.deb
-RUN make build
+RUN hugo
