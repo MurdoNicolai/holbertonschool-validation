@@ -30,7 +30,6 @@ jobs:
           make integration-tests
           make build-docker
           make test
-          make package
           echo ${{github.ref}}
 
 
