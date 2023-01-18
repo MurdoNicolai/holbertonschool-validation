@@ -4,7 +4,7 @@ WORKDIR /module4_task1
 CMD mkdir dist
 RUN apt install git
 RUN git clone https://github.com/murdonicolai/holbertonschool-validation.git
-RUN cp ./holbertonschool-validation/module4_task1/* .
+RUN cp -r ./holbertonschool-validation/module4_task1/* .
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
