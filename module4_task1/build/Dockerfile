@@ -1,6 +1,6 @@
 FROM golang:1.15.8-buster
 
-COPY . .
+WORKDIR /module4_task1
 RUN apt install git
 RUN git clone https://github.com/murdonicolai/holbertonschool-validation.git
 RUN mv ./holbertonschool-validation/module4_task0/* .
