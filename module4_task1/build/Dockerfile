@@ -3,7 +3,7 @@ FROM golang:1.15.8-buster
 WORKDIR /module4_task1
 RUN apt install git
 RUN git clone https://github.com/murdonicolai/holbertonschool-validation.git
-RUN mv ./holbertonschool-validation/module4_task0/* .
+RUN mv ./holbertonschool-validation/module4_task1/* .
 ENV NODE_VERSION=16.13.0
 RUN apt install -y curl
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
