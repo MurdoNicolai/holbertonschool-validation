@@ -28,6 +28,7 @@ set (`ls`, `cd` etc.) with:
 * `lint` : checks readme and deploy
 * `clean` : cleans up package or build
 * `build-docker`: builds virtual machine to run the website on
+* `docker-tests`: tests docker
 
 ## Workflow
 
