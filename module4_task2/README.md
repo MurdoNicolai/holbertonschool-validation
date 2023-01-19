@@ -27,6 +27,7 @@ set (`ls`, `cd` etc.) with:
 * `package` : make a zipfile with dis and the api
 * `lint` : checks readme and deploy
 * `clean` : cleans up package or build
+* `build-docker`: builds virtual machine to run the website on
 
 ## Workflow
 
